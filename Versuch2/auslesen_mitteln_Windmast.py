@@ -38,7 +38,7 @@ for filename in all_files:
     print(filename)
 
     code=np.genfromtxt(filename, skip_header=6, delimiter=';', usecols=(0))
-    time=pd.to_datetime(np.genfromtxt(filename, skip_header=6, delimiter=';', usecols=(1), dtype=str))
+    time=pd.to_datetime(np.genfromtxt(filename, skip_header=6, delimiter=';', usecols=(1), dtype=str),dayfirst=True)
     anemometer1=np.genfromtxt(filename, skip_header=6, delimiter=';', usecols=(2))
     anemometer2=np.genfromtxt(filename, skip_header=6, delimiter=';', usecols=(3))
     anemometer3=np.genfromtxt(filename, skip_header=6, delimiter=';', usecols=(4))
