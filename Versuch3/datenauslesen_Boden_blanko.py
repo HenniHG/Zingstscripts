@@ -59,7 +59,7 @@ for i in range(len(array)):
         n=n+1
     else:
         splitarr=array[i].split(' ')
-        date.append(parser.parse(str(Datum)+' '+splitarr[0]))
+        date.append(parser.parse(str(Datum)+' '+splitarr[0],dayfirst=True))
         #ädaystr.append(Datum)
         if splitarr[splitarr.index('00:')+1]=='':
             pyran_down.append('nan')
