@@ -94,7 +94,7 @@ e4=[]
 #### fill lists with data
 for i in range(len(Zeile1)):
   
-    date.append(parser.parse(Zeile1[i][2:19]))
+    date.append(parser.parse(Zeile1[i][2:19],dayfirst=True))
         
     Z2split=Zeile2[i].split(' ')
     x.append(Z2split[Z2split.index('y')-1])
